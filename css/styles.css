@@ -5,6 +5,12 @@ body{
     font-family: "Poppins";
 }
 
+@media (min-width: 1200px){
+    .container {
+        max-width: 1300px;
+    }
+}
+
 ul li{
     list-style: none;
 }
@@ -241,10 +247,16 @@ header .videoWrapper h2{
 }
 
 /* PRODUK */
+
 .produk{
     background: var(--primary);
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.produk .accordion-item{
+    margin-bottom: 10px;
+    border: none !important;
 }
 
 .produk h1{
@@ -412,6 +424,10 @@ header .videoWrapper h2{
 
 .galeri .container-fluid{
     padding: 0;
+}
+
+.galeri img{
+    width: 100%;
 }
 
 /* FOOTER */
