@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-32x32.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon-16x16.ico" sizes="16x16">
+    <link rel="icon" href="assets/favicon-32x32.ico" sizes="32x32">
     <title>PT Tirta Purbalingga Adijaya</title>
 
     <!-- G FONTS -->
@@ -16,77 +19,83 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/responsive.css">
 
 </head>
 
 <body>
+    <!-- HAPUS AJA -->
+    <!-- <div id="hapusAja">
+        <div class="text">
+            <svg viewbox="0 0 100 20" class="center">
+                <defs>
+                    <pattern id="wave" x="0" y="0" width="100%" height="100%" patternUnits="userSpaceOnUse">
+                        <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                            mask="url(#mask)" fill="var(--light)">
+                            <animateTransform attributeName="transform" begin="0s" dur="1.5s" type="translate"
+                                from="0,0" to="40,0" repeatCount="indefinite" />
+                        </path>
+                    </pattern>
+                </defs>
+                <text text-anchor="middle" x="50" y="15" fill="url(#wave)" fill-opacity="1" class="liquid">HAPPY
+                    CODING!</text>
+            </svg>
+        </div>
+    </div> -->
+    <!-- HAPUS AJA -->
+
+
     <!-- NAVIGASI -->
-    <div class="mobilenav">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto align-items-center">
-                        <img class="logo" src="./assets/logo.png" alt="">
-                        <a class="nav-link active" aria-current="page" href="#">Sejarah</a>
-                        <a class="nav-link" href="#">Visi Misi</a>
-                        <a class="nav-link" href="#">Penghargaan</a>
-                        <a class="nav-link" href="#">Produk Kami</a>
-                        <a class="nav-link" href="#">Testimoni</a>
-                        <a class="nav-link" href="#">Berita</a>
-                    </div>
+    <nav class="navbar navbar-expand-xl navbar-light">
+        <div class="container-fluid">
+            <img class="logo d-xl-none d-lg-block me-auto ms-4" src="./assets/logo.png" alt="">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav align-items-center mx-xl-auto">
+                    <a class="nav-link active" aria-current="page" href="#sejarah">Sejarah</a>
+                    <a class="nav-link" href="#visi">Visi Misi</a>
+                    <a class="nav-link" href="#penghargaan">Penghargaan</a>
+                    <img class="logo d-xl-block d-none" src="./assets/logo.svg" alt="">
+                    <a class="nav-link" href="#produk">Produk Kami</a>
+                    <a class="nav-link" href="#testimoni">Testimoni</a>
+                    <a class="nav-link mx-0 px-0" href="#berita">Berita</a>
                 </div>
             </div>
-        </nav>
-    </div>
-    <div class="desktopnav">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto align-items-center">
-                        <a class="nav-link active" aria-current="page" href="#">Sejarah</a>
-                        <a class="nav-link" href="#">Visi Misi</a>
-                        <a class="nav-link" href="#">Penghargaan</a>
-                        <img class="logo" src="./assets/logo.png" alt="">
-                        <a class="nav-link" href="#">Produk Kami</a>
-                        <a class="nav-link" href="#">Testimoni</a>
-                        <a class="nav-link" href="#">Berita</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <!-- END NAVIGASI -->
 
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- HEADER -->
-    <header>
+    <header id="header">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="content">
-                        <div class="text-center">
-                            <h1>The Good Beverage Company PT. Sinar Sosro</h1>
-                            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                                unknown
-                                printer took a galley of type and scrambled it</p>
-                        </div>
+                        <h1 class="mx-auto">The Good Beverage Company PT. Sinar Sosro</h1>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                            printer took a galley of type and scrambled it</p>
+                        <!-- <img src="assets/img1.png" class="img-fluid rounded-top" alt="Gambar Perusahaan"> -->
                         <iframe width="100%" height="550" src="https://www.youtube.com/embed/EWDX5o37nmQ"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen class="mt-4">
+                            allowfullscreen
+                            class="mt-4">
                         </iframe>
+                        <!-- <h5>Profil PT. Tirta Purbalingga Adijaya</h5> -->
                     </div>
                 </div>
             </div>
@@ -96,25 +105,17 @@
 
     <!-- MITRA -->
     <section class="mitra">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-11 col-lg-2 text-center">
-                    <img class="img-fluid" src="./assets/imgMitra.png" alt="">
-                </div>
-                <div class="col-11 col-lg-2 text-center">
-                    <img class="img-fluid" src="./assets/imgMitra.png" alt="">
-                </div>
-                <div class="col-11 col-lg-2 text-center">
-                    <img class="img-fluid" src="./assets/imgMitra.png" alt="">
-                </div>
-                <div class="col-11 col-lg-2 text-center">
-                    <img class="img-fluid" src="./assets/imgMitra.png" alt="">
-                </div>
-                <div class="col-11 col-lg-2 text-center">
-                    <img class="img-fluid" src="./assets/imgMitra.png" alt="">
-                </div>
-                <div class="col-11 col-lg-2 text-center">
-                    <img class="img-fluid" src="./assets/imgMitra.png" alt="">
+                <div class="col">
+                    <div class="content d-flex justify-content-around">
+                        <p>Mitra</p>
+                        <p>Mitra</p>
+                        <p>Mitra</p>
+                        <p>Mitra</p>
+                        <p>Mitra</p>
+                        <p>Mitra</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,44 +125,54 @@
     <!-- TENTANG -->
     <section class="tentang">
         <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <div class="content">
-                        <h1>Tentang PT. Tirta Purbalingga Adijaya</h1>
+            <div class="content">
+                <h1>Tentang PT. Tirta Purbalingga Adijaya</h1>
+                <div class="row row-cols-1 row-cols-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-3">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="logo"></div>
+                                <h5 class="card-title">Sejarah</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Dolorem, consequatur.</p>
+                                <a href="#" class="text-decoration-none">Lihat Selengkapnya</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="cardz">
-                        <img src="./assets/imgTentang.png" alt="">
-                        <h4>Sejarah</h4>
-                        <p>Lorem Ipsum is simply text of the printing and typesetting </p>
-                        <a href="#">Lihat selegkapnya</a>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="logo"></div>
+                                <h5 class="card-title">Visi dan Misi</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Dolorem, consequatur.</p>
+                                <a href="#" class="text-decoration-none">Lihat Selengkapnya</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="cardz">
-                        <img src="./assets/imgTentang.png" alt="">
-                        <h4>Visi dan Misi</h4>
-                        <p>Lorem Ipsum is simply text of the printing and typesetting </p>
-                        <a href="#">Lihat selegkapnya</a>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="logo"></div>
+                                <h5 class="card-title">Penghargaan</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Dolorem, consequatur.</p>
+                                <a href="#" class="text-decoration-none">Lihat Selengkapnya</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="cardz">
-                        <img src="./assets/imgTentang.png" alt="">
-                        <h4>Penghargaan</h4>
-                        <p>Lorem Ipsum is simply text of the printing and typesetting </p>
-                        <a href="#">Lihat selegkapnya</a>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="cardz">
-                        <img src="./assets/imgTentang.png" alt="">
-                        <h4>Produk</h4>
-                        <p>Lorem Ipsum is simply text of the printing and typesetting </p>
-                        <a href="#">Lihat selegkapnya</a>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="logo"></div>
+                                <h5 class="card-title">Produk</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit.
+                                    Dolorem, consequatur.</p>
+                                <a href="#" class="text-decoration-none">Lihat Selengkapnya</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,119 +181,111 @@
     <!-- END TENTANG -->
 
     <!-- SEJARAH -->
-    <section class="sejarah">
+    <section class="sejarah" id="sejarah">
         <div class="container-fluid">
-            <div class="row rowSejarah">
-                <div class="col-lg-6">
-                    <div class="content">
-                        <h1>Sejarah PT. Tirta
-                            Purbalingga Adijaya </h1>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                            printer took a galley of type and scrambled it to make a type specimen book It has survived
-                            not only five centuries, but also the leap into electronic typesetting, remaining
-                            essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                            containing Lorem Ipsum passages, and more recently with desktop publishing software like
-                        </p>
-                    </div>
+            <div class="row g-4">
+                <div class="col-xl-6 col-lg-12 col-sm-12 col-12 s-text mb-sm-3 px-5 py-5">
+                    <h1 class="mb-4">Sejarah PT. Tirta Purbalingga Adijaya</h1>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s,
+                        when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including version</p>
                 </div>
-                <div class="col-11 col-lg-6" style="padding-right: 0;">
-                    <img width="100%" class="img-fluid" src="./assets/imgSejarah.png" alt="">
+                <div class="col-xl-6 col-lg-10 mx-lg-auto col-sm-12 col-12 s-gambar t-sm-4 d-none d-lg-block">
+                    <img src="assets/imgSejarah.png" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
     </section>
     <!-- END SEJARAH -->
 
-    <!-- VISI MISI -->
-    <section class="visimisi">
+    <!-- VISI -->
+    <section class="visi" id="visi">
         <div class="container">
-            <div class="row align-items-center rowVisi">
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="./assets/imgMisi1.png" alt="">
+            <div class="row g-xl-5">
+                <div class="px-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-none d-lg-block">
+                    <img src="assets/imgMisi1.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-6 col-11">
-                    <div class="content">
-                        <h1>Visi PT. Tirta <br>
-                            Purbalingga Adijaya</h1>
-                        <p>To become the best plastic packaging manufacturer in ASEAN by
-                            providing quality products developed together with customers under
-                            medium to long term contracts to a cross section of selected end
-                            markets at the lowest possible production cost.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center rowVisi2">
-                <div class="col-lg-6 col-11">
-                    <div class="content2">
-                        <h1>Misi PT. Tirta <br>
-                            Purbalingga Adijaya</h1>
-                        <p>1. To produce quality products at a competitive price meeting
-                            customers stringent product specifications and quality requirements
-                            within shortest possible delivery time.</p>
-                        <p>2. To be the forefront leader in production technology and innovation
-                            achieving market leadership reputable and internationally recognized
-                            brand names within high growth industries.</p>
-                        <p>3. To develop production lines at customer’s premises for a longer term
-                            contract period to serve customers better in terms of reduced delivery
-                            time, highest possible quality and eliminating the need for customers
-                            to maintain high inventories. (In plant concept).</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="./assets/imgMisi2.png" alt="">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column justify-content-center">
+                    <h1>Visi PT. Tirta Purbalingga Adijaya</h1>
+                    <p>To become the best plastic packaging manufacturer in ASEAN by
+                        providing quality products developed together with customers under
+                        medium to long term contracts to a cross section of selected end
+                        markets at the lowest possible production cost.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- END VISI MISI -->
+    <!-- END VISI -->
 
-    <!-- PENGHARGAAN -->
-    <section class="penghargaan">
+    <!-- ========== Start Misi ========== -->
+    <section class="misi">
         <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <div class="content">
-                        <h1>Tentang PT. Tirta Purbalingga Adijaya</h1>
-                    </div>
+            <div class="row g-xl-5">
+                <div
+                    class="px-auto col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column justify-content-center">
+                    <h1>Misi PT. Tirta Purbalingga Adijaya</h1>
+                    <p>1. To produce quality products at a competitive price meeting
+                        customers stringent product specifications and quality requirements
+                        within shortest possible delivery time.</p>
+                    <p>2. To be the forefront leader in production technology and innovation
+                        achieving market leadership reputable and internationally recognized
+                        brand names within high growth industries.</p>
+                    <p>3. To develop production lines at customer’s premises for a longer term
+                        contract period to serve customers better in terms of reduced delivery
+                        time, highest possible quality and eliminating the need for customers
+                        to maintain high inventories. (In plant concept).</p>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 d-none d-lg-block">
+                    <img src="assets/imgMisi2.png" class="img-fluid" alt="">
                 </div>
             </div>
-            <div class="row rowPenghargaan">
-                <div class="col-lg-4 col-10">
-                    <div class="cardz">
-                        <div class="cardzHead">
-                            <img class="" src="./assets/imgPenghargaan.png" alt="">
-                        </div>
-                        <div class="cardzBody">
-                            <p>Menerima Tahun 2017</p>
-                            <h4>International Organization
-                                for Standardization</h4>
-                            <a href="#">Lanjutkan Membaca</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-10">
-                    <div class="cardz">
-                        <div class="cardzHead">
-                            <img class="" src="./assets/imgPenghargaan.png" alt="">
-                        </div>
-                        <div class="cardzBody">
-                            <p>Menerima Tahun 2017</p>
-                            <h4>International Organization
-                                for Standardization</h4>
-                            <a href="#">Lanjutkan Membaca</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-10">
-                    <div class="cardz">
-                        <div class="cardzHead">
-                            <img class="" src="./assets/imgPenghargaan.png" alt="">
-                        </div>
-                        <div class="cardzBody">
-                            <p>Menerima Tahun 2017</p>
-                            <h4>International Organization
-                                for Standardization</h4>
-                            <a href="#">Lanjutkan Membaca</a>
+        </div>
+    </section>
+    <!-- ========== End Misi ========== -->
+
+    <!-- PENGHARGAAN -->
+    <section class="penghargaan" id="penghargaan">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="content">
+                        <h1>Penghargaan PT. Tirta Purbalingga Adijaya</h1>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                            <div class="col-8 mx-auto col-sm-6">
+                                <div class="card">
+                                    <img src="assets/imgPenghargaan.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Menerima Tahun 2017</p>
+                                        <h5 class="card-title">International Organization for Standardization</h5>
+                                        <a href="#" class="text-decoration-none">Lanjutkan Selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 mx-auto col-sm-6">
+                                <div class="card">
+                                    <img src="assets/imgPenghargaan.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Menerima Tahun 2017</p>
+                                        <h5 class="card-title">International Organization for Standardization</h5>
+                                        <a href="#" class="text-decoration-none">Lanjutkan Selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 mx-auto col-sm-6 d-md-block d-sm-none">
+                                <div class="card">
+                                    <img src="assets/imgPenghargaan.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Menerima Tahun 2017</p>
+                                        <h5 class="card-title">International Organization for Standardizatione</h5>
+                                        <a href="#" class="text-decoration-none">Lanjutkan Selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -292,93 +295,193 @@
     <!-- END PENGHARGAAN -->
 
     <!-- PRODUK -->
-    <section class="produk">
+    <section class="produk" id="produk">
         <div class="container">
-            <div class="row text-center">
+            <div class="row">
                 <div class="col">
                     <div class="content">
                         <h1>Produk PT. Tirta Purbalingga Adijaya</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <img class="check" src="./assets/svgCheck.svg" alt="">
-                            <h5><b>Galon - 19 liter</b></h5>
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="d-flex align-items-start">
-                                <img style="margin-right:30px;" src="./assets/imgProduk.png" alt="">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae non consequatur eos
-                                iure illum laudantium nisi optio, distinctio impedit. Animi libero atque accusantium
-                                accusamus alias expedita explicabo inventore quis magni! Laudantium expedita ratione
-                                commodi. Fuga placeat a eligendi, debitis labore, fugit nam quis quibusdam corporis
-                                nesciunt recusandae officia dolorem reprehenderit? Lorem ipsum, dolor sit amet
-                                consectetur adipisicing elit. Recusandae non consequatur eos
-                                iure illum laudantium nisi optio, distinctio impedit. Animi libero atque accusantium
-                                accusamus alias expedita explicabo inventore quis magni! Laudantium expedita ratione
-                                commodi. Fuga placeat a eligendi, debitis labore, fugit nam quis quibusdam corporis
-                                nesciunt recusandae officia dolorem reprehenderit?
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsed1" aria-expanded="true" aria-controls="collapsed1">
+                                        <p>Galon - 19 liter</p>
+                                    </button>
+                                </h2>
+                                <div id="collapsed1" class="accordion-collapse collapse show"
+                                    aria-labelledby="heading1">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div
+                                                class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                                <img src="assets/imgProduk.png" alt="" title="">
+                                            </div>
+                                            <div
+                                                class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex align-items-center">
+                                                <p>
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since
+                                                    the
+                                                    1500s, when an unknown printer took a galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book. It has survived not only five centuries,
+                                                    but
+                                                    also the leap into electronic typesetting, remaining essentially
+                                                    unchanged. It was popularised in the 1960s with the release of
+                                                    Letraset
+                                                    sheets containing Lorem Ipsum passages, and more recently with
+                                                    desktop
+                                                    publishing software like Aldus PageMaker including versions of Lorem
+                                                    Ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <img class="check" src="./assets/svgCheck.svg" alt="">
-                            <h5><b>Botol - 600 mL</b></h5>
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="d-flex align-items-start">
-                                <img style="margin-right:30px;" src="./assets/imgProduk.png" alt="">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae non consequatur eos
-                                iure illum laudantium nisi optio, distinctio impedit. Animi libero atque accusantium
-                                accusamus alias expedita explicabo inventore quis magni! Laudantium expedita ratione
-                                commodi. Fuga placeat a eligendi, debitis labore, fugit nam quis quibusdam corporis
-                                nesciunt recusandae officia dolorem reprehenderit? Lorem ipsum, dolor sit amet
-                                consectetur adipisicing elit. Recusandae non consequatur eos
-                                iure illum laudantium nisi optio, distinctio impedit. Animi libero atque accusantium
-                                accusamus alias expedita explicabo inventore quis magni! Laudantium expedita ratione
-                                commodi. Fuga placeat a eligendi, debitis labore, fugit nam quis quibusdam corporis
-                                nesciunt recusandae officia dolorem reprehenderit?
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsed2" aria-expanded="false" aria-controls="collapsed2">
+                                        <p>Cup - 220 mL</p>
+                                    </button>
+                                </h2>
+                                <div id="collapsed2" class="accordion-collapse collapse" aria-labelledby="heading2">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div
+                                                class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                                <img src="assets/imgProduk.png" alt="" title="">
+                                            </div>
+                                            <div
+                                                class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex align-items-center">
+                                                <p>
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since
+                                                    the
+                                                    1500s, when an unknown printer took a galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book. It has survived not only five centuries,
+                                                    but
+                                                    also the leap into electronic typesetting, remaining essentially
+                                                    unchanged. It was popularised in the 1960s with the release of
+                                                    Letraset
+                                                    sheets containing Lorem Ipsum passages, and more recently with
+                                                    desktop
+                                                    publishing software like Aldus PageMaker including versions of Lorem
+                                                    Ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <img class="check" src="./assets/svgCheck.svg" alt="">
-                            <h5><b>Botol - 300 mL</b></h5>
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="d-flex align-items-start">
-                                <img style="margin-right:30px;" src="./assets/imgProduk.png" alt="">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae non consequatur eos
-                                iure illum laudantium nisi optio, distinctio impedit. Animi libero atque accusantium
-                                accusamus alias expedita explicabo inventore quis magni! Laudantium expedita ratione
-                                commodi. Fuga placeat a eligendi, debitis labore, fugit nam quis quibusdam corporis
-                                nesciunt recusandae officia dolorem reprehenderit? Lorem ipsum, dolor sit amet
-                                consectetur adipisicing elit. Recusandae non consequatur eos
-                                iure illum laudantium nisi optio, distinctio impedit. Animi libero atque accusantium
-                                accusamus alias expedita explicabo inventore quis magni! Laudantium expedita ratione
-                                commodi. Fuga placeat a eligendi, debitis labore, fugit nam quis quibusdam corporis
-                                nesciunt recusandae officia dolorem reprehenderit?
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsed3" aria-expanded="false" aria-controls="collapsed3">
+                                        <p>Botol - 330 mL</p>
+                                    </button>
+                                </h2>
+                                <div id="collapsed3" class="accordion-collapse collapse" aria-labelledby="heading3">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div
+                                                class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                                <img src="assets/imgProduk.png" alt="" title="">
+                                            </div>
+                                            <div
+                                                class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex align-items-center">
+                                                <p>
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since
+                                                    the
+                                                    1500s, when an unknown printer took a galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book. It has survived not only five centuries,
+                                                    but
+                                                    also the leap into electronic typesetting, remaining essentially
+                                                    unchanged. It was popularised in the 1960s with the release of
+                                                    Letraset
+                                                    sheets containing Lorem Ipsum passages, and more recently with
+                                                    desktop
+                                                    publishing software like Aldus PageMaker including versions of Lorem
+                                                    Ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsed4" aria-expanded="false" aria-controls="collapsed4">
+                                        <p>Botol - 600 mL</p>
+                                    </button>
+                                </h2>
+                                <div id="collapsed4" class="accordion-collapse collapse" aria-labelledby="heading4">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div
+                                                class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                                <img src="assets/imgProduk.png" alt="" title="">
+                                            </div>
+                                            <div
+                                                class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex align-items-center">
+                                                <p>
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since
+                                                    the
+                                                    1500s, when an unknown printer took a galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book. It has survived not only five centuries,
+                                                    but
+                                                    also the leap into electronic typesetting, remaining essentially
+                                                    unchanged. It was popularised in the 1960s with the release of
+                                                    Letraset
+                                                    sheets containing Lorem Ipsum passages, and more recently with
+                                                    desktop
+                                                    publishing software like Aldus PageMaker including versions of Lorem
+                                                    Ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsed5" aria-expanded="false" aria-controls="collapsed5">
+                                        <p>Botol - 1500 mL</p>
+                                    </button>
+                                </h2>
+                                <div id="collapsed5" class="accordion-collapse collapse" aria-labelledby="heading5">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div
+                                                class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-center">
+                                                <img src="assets/imgProduk.png" alt="" title="">
+                                            </div>
+                                            <div
+                                                class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 d-flex align-items-center">
+                                                <p>
+                                                    Lorem Ipsum has been the industry's standard dummy text ever since
+                                                    the
+                                                    1500s, when an unknown printer took a galley of type and scrambled
+                                                    it to
+                                                    make a type specimen book. It has survived not only five centuries,
+                                                    but
+                                                    also the leap into electronic typesetting, remaining essentially
+                                                    unchanged. It was popularised in the 1960s with the release of
+                                                    Letraset
+                                                    sheets containing Lorem Ipsum passages, and more recently with
+                                                    desktop
+                                                    publishing software like Aldus PageMaker including versions of Lorem
+                                                    Ipsum
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -389,62 +492,49 @@
     <!-- END PRODUK -->
 
     <!-- BERITA -->
-    <section class="berita">
+    <section class="berita" id="berita">
         <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <div class="content">
-                        <h1>Berita Terbaru PT. <br>
-                            Tirta Purbalingga Adijaya</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row rowBerita">
-                <div class="col-lg-4 col-10">
-                    <div class="cardz">
-                        <div class="cardzHead">
-                            <img class="" src="./assets/imgPenghargaan.png" alt="">
-                        </div>
-                        <div class="cardzBody">
-                            <p class="event">#EVENT</p>
-                            <h4>Mengumpulkan botol 300ml
-                                dan tukar dengan uang</h4>
-                            <p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the
-                                1500s, when an
-                                unknown printer took a galley of</p>
-                            <a href="#">Lanjutkan Membaca</a>
+            <div class="content">
+                <h1>Berita Terbaru PT.
+                    Tirta Purbalingga Adijaya</h1>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col-8 mx-auto col-sm-8 mx-sm-auto col-md-6">
+                        <div class="card">
+                            <img src="assets/imgPenghargaan.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="tag text-warning">#EVENT</p>
+                                <h5 class="card-title">Mengumpulkan botol 300ml
+                                    dan tukar dengan uang</h5>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of</p>
+                                <a href="#" class="text-decoration-none">Lanjutkan Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-10">
-                    <div class="cardz">
-                        <div class="cardzHead">
-                            <img class="" src="./assets/imgPenghargaan.png" alt="">
-                        </div>
-                        <div class="cardzBody">
-                            <p class="pengumuman">#PENGUMUMAN</p>
-                            <h4>Mengumpulkan botol 300ml
-                                dan tukar dengan uang</h4>
-                            <p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the
-                                1500s, when an
-                                unknown printer took a galley of</p>
-                            <a href="#">Lanjutkan Membaca</a>
+                    <div class="col-8 mx-auto col-sm-8 mx-sm-auto col-md-6">
+                        <div class="card">
+                            <img src="assets/imgPenghargaan.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="tag text-success">#PENGUMUMAN</p>
+                                <h5 class="card-title">Daftar karyawan yang di
+                                    terima bulan april 2022</h5>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of</p>
+                                <a href="#" class="text-decoration-none">Lanjutkan Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-10">
-                    <div class="cardz">
-                        <div class="cardzHead">
-                            <img class="" src="./assets/imgPenghargaan.png" alt="">
-                        </div>
-                        <div class="cardzBody">
-                            <p class="loker">#LOKER</p>
-                            <h4>Mengumpulkan botol 300ml
-                                dan tukar dengan uang</h4>
-                            <p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the
-                                1500s, when an
-                                unknown printer took a galley of</p>
-                            <a href="#">Lanjutkan Membaca</a>
+                    <div class="col-8 mx-auto col-sm-8 mx-sm-auto col-md-6 d-lg-block d-md-none">
+                        <div class="card">
+                            <img src="assets/imgPenghargaan.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="tag text-danger">#LOKER</p>
+                                <h5 class="card-title">We are hiring senior product
+                                    designer right now !</h5>
+                                <p class="card-text">Lorem Ipsum has been the industry's standard dummy text ever since
+                                    the 1500s, when an unknown printer took a galley of</p>
+                                <a href="#" class="text-decoration-none">Lanjutkan Selengkapnya</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -452,77 +542,100 @@
         </div>
     </section>
     <!-- END BERITA -->
-
     <!-- TESTIMONI -->
-    <section class="testimoni">
+    <section class="testimoni" id="testimoni">
         <div class="container">
-            <div class="row text-center">
+            <div class="row">
                 <div class="col">
-                    <h1>Apa kata mereka tentang <br>
-                        PT. Tirta Purbalingga Adijaya</h1>
-                </div>
-            </div>
-            <div class="row rowTestimoni">
-                <div class="col-lg-3 col-10">
-                    <div class="cardz">
-                        <img src="./assets/iconStar.svg" alt="">
-                        <p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only</p>
-                        <div class="d-flex align-items-center profilWrapper">
-                            <img src="./assets/imgTestimoni.png" alt="">
-                            <div>
-                                <h5>Kylian Mbappe</h5>
-                                <p>Masyarakat</p>
+                    <div class="content">
+                        <h1>
+                            Apa kata mereka tentang
+                            PT. Tirta Purbalingga Adijaya
+                        </h1>
+                        <div class="cards row row-cols-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-4 g-2">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/iconStar.svg" alt="" title="">
+                                        <p class="card-text">
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only
+                                        </p>
+                                        <div class="row name">
+                                            <div class="col-xl-3 col-lg-2 col-md-3 col-sm-2 col-2">
+                                                <img src="./assets/imgTestimoni.png" alt="">
+                                            </div>
+                                            <div class="col-xl-9 col-lg-10 col-md-9 col-sm-10 col-10">
+                                                <h6>Daffa Zaki</h6>
+                                                <p>Masyarakat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-10">
-                    <div class="cardz">
-                        <img src="./assets/iconStar.svg" alt="">
-                        <p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only</p>
-                        <div class="d-flex align-items-center profilWrapper">
-                            <img src="./assets/imgTestimoni.png" alt="">
-                            <div>
-                                <h5>Kylian Mbappe</h5>
-                                <p>Masyarakat</p>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/iconStar.svg" alt="" title="">
+                                        <p class="card-text">
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only
+                                        </p>
+                                        <div class="row name">
+                                            <div class="col-xl-3 col-lg-2 col-md-3 col-sm-2 col-2">
+                                                <img src="./assets/imgTestimoni.png" alt="">
+                                            </div>
+                                            <div class="col-xl-9 col-lg-10 col-md-9 col-sm-10 col-10">
+                                                <h6>Daffa Zaki</h6>
+                                                <p>Masyarakat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-10">
-                    <div class="cardz">
-                        <img src="./assets/iconStar.svg" alt="">
-                        <p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only</p>
-                        <div class="d-flex align-items-center profilWrapper">
-                            <img src="./assets/imgTestimoni.png" alt="">
-                            <div>
-                                <h5>Kylian Mbappe</h5>
-                                <p>Masyarakat</p>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/iconStar.svg" alt="" title="">
+                                        <p class="card-text">
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only
+                                        </p>
+                                        <div class="row name">
+                                            <div class="col-xl-3 col-lg-2 col-md-3 col-sm-2 col-2">
+                                                <img src="./assets/imgTestimoni.png" alt="">
+                                            </div>
+                                            <div class="col-xl-9 col-lg-10 col-md-9 col-sm-10 col-10">
+                                                <h6>Daffa Zaki</h6>
+                                                <p>Masyarakat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-10">
-                    <div class="cardz">
-                        <img src="./assets/iconStar.svg" alt="">
-                        <p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown
-                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
-                            not only</p>
-                        <div class="d-flex align-items-center profilWrapper">
-                            <img src="./assets/imgTestimoni.png" alt="">
-                            <div>
-                                <h5>Kylian Mbappe</h5>
-                                <p>Masyarakat</p>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="assets/iconStar.svg" alt="" title="">
+                                        <p class="card-text">
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only
+                                        </p>
+                                        <div class="row name">
+                                            <div class="col-xl-3 col-lg-2 col-md-3 col-sm-2 col-2">
+                                                <img src="./assets/imgTestimoni.png" alt="">
+                                            </div>
+                                            <div class="col-xl-9 col-lg-10 col-md-9 col-sm-10 col-10">
+                                                <h6>Daffa Zaki</h6>
+                                                <p>Masyarakat</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -535,24 +648,24 @@
     <!-- GALERI -->
     <section class="galeri">
         <div class="container-fluid">
-            <div class="row justify-content-between">
-                <div class="col-6 col-lg-2">
-                    <img class="img-fluid" src="./assets/imgGaleri1.png" alt="">
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-3 row-cols-xl-4">
+                <div class="col-xl-2 g-0">
+                    <img src="assets/imgGaleri1.png" alt="Gambar 1">
                 </div>
-                <div class="col-6 col-lg-2">
-                    <img class="img-fluid" src="./assets/imgGaleri2.png" alt="">
+                <div class="col-xl-2 g-0">
+                    <img src="assets/imgGaleri2.png" alt="Gambar 2">
                 </div>
-                <div class="col-6 col-lg-2">
-                    <img class="img-fluid" src="./assets/imgGaleri3.png" alt="">
+                <div class="col-xl-2 g-0">
+                    <img src="assets/imgGaleri3.png" alt="Gambar 3">
                 </div>
-                <div class="col-6 col-lg-2">
-                    <img class="img-fluid" src="./assets/imgGaleri4.png" alt="">
+                <div class="col-xl-2 g-0">
+                    <img src="assets/imgGaleri4.png" alt="Gambar 4">
                 </div>
-                <div class="col-6 col-lg-2">
-                    <img class="img-fluid" src="./assets/imgGaleri5.png" alt="">
+                <div class="col-xl-2 g-0">
+                    <img src="assets/imgGaleri5.png" alt="Gambar 5">
                 </div>
-                <div class="col-6 col-lg-2">
-                    <img class="img-fluid" src="./assets/imgGaleri6.png" alt="">
+                <div class="col-xl-2 g-0">
+                    <img src="assets/imgGaleri6.png" alt="Gambar 6">
                 </div>
             </div>
         </div>
@@ -561,101 +674,53 @@
 
     <!-- FOOTER -->
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-3">
-                    <img src="./assets/logo.png" alt="">
-                    <p class="desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                        an unknown
+                <div class="full col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 mb-md-5 mb-sm-5 mb-5">
+                    <img src="assets/logo.svg" alt="Logo" title="Logo">
+                    <h5>PT Tirta Purbalingga Adijaya</h5>
+                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
                         printer</p>
-                    <p class="cpr">2022 &copy Copyright All Right Reserved</p>
+                    <p class="copy">2022 Copyright All Right Reserved</p>
                 </div>
-                <div class="col">
-                    <ul>
-                        <li>
-                            <h5>Information</h5>
-                        </li>
-                        <li>
-                            <a>Sejarah</a>
-                        </li>
-                        <li>
-                            <a>Visi & Misi</a>
-                        </li>
-                        <li>
-                            <a>Penghargaan</a>
-                        </li>
-                        <li>
-                            <a>Produk</a>
-                        </li>
-                        <li>
-                            <a>Testimoni</a>
-                        </li>
-                        <li>
-                            <a>Berita</a>
-                        </li>
+                <div class="lists col-12 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-sm-5">
+                    <h5>Information</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none" href="#">Sejarah</a></li>
+                        <li><a class="text-decoration-none" href="#">Visi & Misi</a></li>
+                        <li><a class="text-decoration-none" href="#">Penghargaan</a></li>
+                        <li><a class="text-decoration-none" href="#">Produk</a></li>
+                        <li><a class="text-decoration-none" href="#">Testimoni</a></li>
+                        <li><a class="text-decoration-none" href="#">Berita</a></li>
                     </ul>
                 </div>
-                <div class="col">
-                    <ul>
-                        <li>
-                            <h5>Penghargaan</h5>
-                        </li>
-                        <li>
-                            <a>Sertifikat ISO</a>
-                        </li>
-                        <li>
-                            <a>Visi & Misi</a>
-                        </li>
-                        <li>
-                            <a>Penghargaan</a>
-                        </li>
+                <div class="lists col-12 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                    <h5>Penghargaan</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none" href="#">Sertifikat ISO</a></li>
+                        <li><a class="text-decoration-none" href="#">Visi & Misi</a></li>
+                        <li><a class="text-decoration-none" href="#">Penghargaan</a></li>
                     </ul>
                 </div>
-                <div class="col">
-                    <ul>
-                        <li>
-                            <h5>Loker</h5>
-                        </li>
-                        <li>
-                            <a>Sejarah</a>
-                        </li>
-                        <li>
-                            <a>Visi & Misi</a>
-                        </li>
-                        <li>
-                            <a>Penghargaan</a>
-                        </li>
-                        <li>
-                            <a>Produk</a>
-                        </li>
-                        <li>
-                            <a>Testimoni</a>
-                        </li>
-                        <li>
-                            <a>Berita</a>
-                        </li>
+                <div class="lists col-12 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                    <h5>Loker</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none" href="#">Sejarah</a></li>
+                        <li><a class="text-decoration-none" href="#">Visi & Misi</a></li>
+                        <li><a class="text-decoration-none" href="#">Penghargaan</a></li>
+                        <li><a class="text-decoration-none" href="#">Produk</a></li>
+                        <li><a class="text-decoration-none" href="#">Testimoni</a></li>
                     </ul>
                 </div>
-                <div class="col">
-                    <ul>
-                        <li>
-                            <h5>Sosial Media</h5>
-                        </li>
-                        <li>
-                            <a>Instagram</a>
-                        </li>
-                        <li>
-                            <a>Twitter</a>
-                        </li>
-                        <li>
-                            <a>Facebook</a>
-                        </li>
-                        <li>
-                            <a>Whatsapp</a>
-                        </li>
-                        <li>
-                            <a>Linkedin</a>
-                        </li>
+                <div class="lists col-12 col-sm-6 col-md-3 col-lg-2 col-xl-2">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none" href="#">Instagram</a></li>
+                        <li><a class="text-decoration-none" href="#">Facebook</a></li>
+                        <li><a class="text-decoration-none" href="#">Whatsapp</a></li>
+                        <li><a class="text-decoration-none" href="#">LinkedIn</a></li>
+                        <li><a class="text-decoration-none" href="#">Twitter</a></li>
+                        <li><a class="text-decoration-none" href="#">Line</a></li>
                     </ul>
                 </div>
             </div>
@@ -670,9 +735,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- JS -->
-    <script src="./js/script.js"></script>
+    <script src="./js/scripts.js"></script>
 
 </body>
 
